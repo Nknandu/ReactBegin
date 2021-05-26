@@ -1,17 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import the react and reactDom libraries
+import { image } from "faker";
+import React from "react";
+import ReactDOM from "react-dom";
+import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovedCards';
 
+
+
+//creat a react component
+const App = () =>{
+    
+    return(
+     <div >
+         <Message 
+         header="Change in Service"
+         paragraphText="Me just developer Not A Just Developer"
+         />
+     </div>
+    );
+};
+
+const Message = (props) => {
+
+    return(
+          <div className="ui message">
+        <div className="header">{props.header}</div>
+            <p>{props.paragraphText}</p>
+          </div>
+
+    );
+
+}
+
+
+//creat a react component and show it on the screen
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App/>,
+    document.querySelector('#root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
