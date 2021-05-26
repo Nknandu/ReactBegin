@@ -1,10 +1,6 @@
 //import the react and reactDom libraries
-import { image } from "faker";
 import React from "react";
 import ReactDOM from "react-dom";
-import CommentDetail from './CommentDetail';
-import ApprovalCard from './ApprovedCards';
-
 
 
 //creat a react component
@@ -31,7 +27,6 @@ const Message = (props) => {
     );
 
 }
-
 
 //creat a react component and show it on the screen
 ReactDOM.render(
